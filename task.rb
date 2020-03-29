@@ -48,7 +48,7 @@ def q6
 
   # 以下に回答を記載
   numbers2 = numbers1.map {|i| i * 10} 
-  puts"numbers2 = #{numbers2}"
+  p "numbers2 = #{numbers2}"
 end
 
 def q7
