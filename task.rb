@@ -116,7 +116,7 @@ def q11
   # puts "ユーザの趣味一覧" 
   # sports_list.each_with_index(1){|sport, i|
   # p "No.#{i+1} #{sport}"
-}
+# }
 end
 
 def q12
