@@ -117,7 +117,7 @@ def q11
   sports.each.with_index(1){|sport, i|
   p "No.#{i} #{sport}"
   }
-  
+
 end
 
 def q12
@@ -143,7 +143,7 @@ def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
 
   # 以下に回答を記載
-  p data.keys  
+  puts data.keys  
 
 end
 
