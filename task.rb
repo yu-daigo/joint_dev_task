@@ -99,7 +99,8 @@ def q10
   # else 
   #   p "まぁまぁ好きです"
   # end
-  # } 修正します
+  # } 
+  # 三項演算子に修正します
 
   foods.each{|food|
 p food.include?("うに") ? "好物です" : "まあまあ好きです"
@@ -111,18 +112,20 @@ def q11
   sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]]
 
   # 以下に回答を記載
-  # sports.flatten!
-  # sports_list = sports.uniq
-  # puts "ユーザの趣味一覧" 
-  # sports_list.each_with_index(1){|sport, i|
-  # p "No.#{i+1} #{sport}"
-# }
+  sports.flatten!.uniq!
+  puts "ユーザの趣味一覧" 
+  sports.each.with_index(1){|sport, i|
+  p "No.#{i} #{sport}"
+  }
+  
 end
 
 def q12
   data = { user: { name: "satou", age: 33 } }
 
   # 以下に回答を記載
+  # puts data[:user][:name]
+  puts data.dig(:user, :name)
 
 end
 
@@ -131,6 +134,8 @@ def q13
   update_data = { age: 32, address: "沖縄" }
 
   # 以下に回答を記載
+  user_data.merge!(update_data)
+  p user_data
 
 end
 
@@ -138,6 +143,7 @@ def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
 
   # 以下に回答を記載
+  p data.keys  
 
 end
 
